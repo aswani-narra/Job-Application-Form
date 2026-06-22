@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="job_form.css">
+</head>
+<body>
+    <div class="main">
+       <marquee behavior="scroll" direction="left" scrollamount="5">
+        <p>NAJB Application Form</p>
+    </marquee>
+       <h1>Fill  the form with your details </h1>
+        <form border="5" cellpading="10px" height="250px" width="500px"  rules="all" action="https://script.google.com/macros/s/AKfycbw101ji2SgbPOHtMST6oTrCaX7mNuqaI8Gi-GR2z_VStYrjH_LNMxATItZQ6OJ92yLSNw/exec" method="post" enctype="multipart/form-data">
+            <br>
+            <label for="name" style="text-align:start"> Full Name</label><br>
+
+            <input type="text" name="name" placeholder="Enter your name" id="name" pattern="^[A-Za-z]+(?: [A-Za-z]+)*$" required>
+            <br><br>
+            <label for="email">Email</label><br>
+            <input type="email" name="email" placeholder="Enter your email" id="email" required pattern="[a-zA-Z][a-zA-Z0-9._%+-]*@gmail\.com">
+            <br><br>
+            <label for="age">Age</label><br>
+            <input type="number" name="age" placeholder="Enter your age" id="age" min="18" max="24" required>
+            <br><br>
+            <label for="gender">Gender</label><br>
+            <input type="text" name="gender" id="gender" required list="gen">
+            <datalist id="gen" >  
+                <option value="Male"></option>
+                <option value="Female"></option>
+                <option value="Other"></option>
+            </datalist>
+            <br><br>
+            <label for="countrycode">Country code</label><br>
+            <input type="text" name="countrycode" placeholder="Enter your country code" id="countrycode" required pattern="^\+\d{1,3}$">
+            <br><br>
+            <label for="phonenumber">Mobile number</label><br>
+            <input type="tel" name="phonenumber" placeholder="Enter your mobile number" id="phonenumber" required pattern="[6-9][0-9]{9}" minlength="10" maxlength="10">
+            <br><br>
+            <label for="address">Address</label><br>
+            <input type="text" name="address" placeholder="Enter your address" id="address" required pattern="^[A-Za-z0-9\s,.'-]{3,}$">
+           <br><br> 
+            <label for="graduation">Highest Qualification</label><br>
+            <input type="text" name="graduation" placeholder="Enter your graduation details" id="graduation" list="degree">
+            <datalist id="degree">
+                <option value="B.A">
+                <option value="B.Com">
+                <option value="B.Sc">
+                <option value="B.Tech">
+                <option value="M.A">
+                <option value="M.Com">
+                <option value="M.Sc">
+                <option value="M.Tech">
+            </datalist>
+            <br><br>    
+            <label for="specialization">Specialization</label><br>
+            <input type="text" name="specialization" placeholder="Enter your specialization details" id="specialization" list="spec">
+            <datalist id="spec">
+                    <option value="Artificial Intelligence (AI)"></option>
+                    <option value="Artificial Intelligence & Machine Learning (AI & ML)"></option>
+                    <option value="Artificial Intelligence & Data Science (AI & DS)"></option>
+                    <option value="Chemical Engineering"></option>
+                    <option value="Civil Engineering"></option>
+                    <option value="Computer Science Engineering (CSE)"></option>
+                    <option value="Cyber Security"></option>
+                    <option value="Data Science"></option>
+                    <option value="Electrical & Electronics Engineering (EEE)"></option>
+                    <option value="Electronics & Communication Engineering (ECE)"></option>
+                    <option value="Information Technology (IT)"></option>
+                    <option value="Mechanical Engineering"></option>
+            </datalist>
+            <br><br>
+            <label for="college">College/University</label><br>
+            <input type="text" name="college" placeholder="Enter your college/university name" id="college" required pattern="^[A-Za-z]+(?: [A-Za-z]+)*$">
+            <br><br>
+            <label for="passoutyear">Passout year</label><br>
+            <input type="number" name="passoutyear" placeholder="Enter your passout year" id="passoutyear"  required list="year">
+            <datalist id="year">
+                <option value="2026">
+                <option value="2025">
+                <option value="2024">
+                <option value="2023">
+                <option value="2022">
+                <option value="2021">
+                <option value="2020">
+            </datalist>
+            <br><br>
+            <label for="percentage">CGPA</label><br>
+            <input type="number" name="percentage" placeholder="Enter your CGPA" id="percentage" min="0" max="10" step="0.01" required>
+            <br><br>
+            <label for="current">Current Position</label><br>
+            <input type="text" name="current" placeholder="Enter your current position" id="current" required >
+            <br><br>
+            <label for="currentcompany">Current Company</label><br>
+            <input type="text" name="currentcompany" placeholder="Enter your current company" id="currentcompany" required >
+            <br><br>
+            <label for="experience">Experience</label><br>
+            <input type="text" name="experience" placeholder="Enter your experience details" id="experience" list="exp">
+            <datalist id="exp">
+                <option value="Fresher">
+                <option value="1 year">
+                <option value="2 years">
+                <option value="3 years">
+                <option value="4 years">
+                <option value="5 years">
+            </datalist>
+            <br><br>
+            <label for="skills">Skills</label><br>
+            <input type="text" name="skills" placeholder="Enter your skills" id="skills" required list="skill">
+            <datalist id="skill">
+                <option value="AngularJS">
+                <option value="C">
+                <option value="C++">
+                <option value="CSS">
+                <option value="Data Science">
+                <option value="Flask">
+                <option value="HTML">
+                <option value="Java">
+                <option value="JavaScript">
+                <option value="Machine Learning">
+                <option value="NodeJS">
+                <option value="Python">
+                <option value="ReactJS">
+                <option value="Spring Boot">        
+            </datalist>
+            <br><br>
+            <label for="certifications">Certifications(optional)</label><br>
+            <input type="text" name="certifications" placeholder="Enter your certifications" id="certifications">
+            <br><br>
+            <label for="resume">Resume</label><br>
+            <input type="file" name="resume" id="resume" accept=".pdf,.doc,.docx" required>
+            <br><br>
+            <label for="noticeperiod">Notice Period</label><br>
+            <input type="text" name="noticeperiod" placeholder="Enter your notice period" id="noticeperiod" required list="notice">
+            <datalist id="notice">
+                <option value="Immediate">
+                <option value="1 week">
+                <option value="2 weeks">
+                <option value="1 month">
+            </datalist>
+            <br><br>
+            <label for="expectedsalary">Expected Salary</label><br>
+            <input type="number" name="expectedsalary" placeholder="Enter your expected salary" id="expectedsalary" min="0" max="1000000" step="1000" required>
+            <br><br>
+            <label for="employmenttype">Employment Type</label><br>
+            <input type="text" name="employmenttype" placeholder="Enter your employment type" id="employmenttype" required list="employment">
+            <datalist id="employment">
+                <option value="Contract">
+                <option value="Full-time">
+                <option value="Internship">
+                <option value="Part-time">
+            </datalist>
+            <br><br>
+            <input type="checkbox" name="willin" id="willin" required>
+            <label for="willin"> Are you willing to relocate</label>
+            <br><br>
+            <label for="joblocation">Preferred Job Location</label><br>
+            <input type="text" name="joblocation" placeholder="Enter your preferred location" id="joblocation" required list="location">
+            <datalist id="location">
+                <option value="Bangalore">
+                <option value="Chennai">
+                <option value="Hyderabad">
+                <option value="Kolkata">
+                <option value="Mumbai">
+                <option value="Pune">
+            </datalist>
+            <br><br>
+            
+            <input type="submit" value="Submit Application" required>
+            
+        </form>
+    </div>
+</body>
+
+</html>

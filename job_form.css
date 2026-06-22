@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}.main{
+    height: 100%;
+    
+    max-width:700px;
+    margin:  20px auto;
+    border: 2px solid black;
+    /* text-align: center; */
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    background-color:rgb(222, 678, 543);
+}
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+    color:black;
+    border: 2px solid black;
+    background-color:blue;
+    width: 400px;
+    border-radius: 10px;
+}
+p:hover{
+    background-color: green;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+input{
+    width:100%;
+    max-width: 100%;
+    height:40px;
+    padding: 8px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+input:focus{
+    background-color: lightgray;
+}
+input[type="file"]{
+    width: 300px;
+    border: 2px solid black;
+    background-color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+    border: 2px solid black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    background-color: black;
+}
+input[type="submit"]{
+    /* width: 200px;
+    height: 40px; */
+    color: white;
+    border: 2px solid black;
+    background-color:blue;
+    font-size: 18px;
+    /* text-align: center; */
+    cursor: pointer;
+    /* margin-left:55px */
+}
+input[type="submit"]:hover{
+    background-color: green;
+}
+@media screen and (max-width:768px){
+
+    .main{
+        width:95%;
+        padding:15px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    p{
+        font-size:20px;
+    }
+
+    label{
+        font-size:16px;
+    }
+
+    input{
+        height:38px;
+        font-size:14px;
+    }
+
+    input[type="submit"]{
+        font-size:16px;
+    }
+}
