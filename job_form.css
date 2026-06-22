@@ -81,6 +81,20 @@ input[type="submit"]{
 input[type="submit"]:hover{
     background-color: green;
 }
+.success-box{
+    display:none;
+    background-color:skyblue;
+    border:2px solid #2196F3;
+    border-radius:10px;
+    padding:20px;
+    margin:20px auto;
+    max-width:600px;
+    text-align:center;
+}
+
+.success-box h2{
+    margin-bottom:10px;
+}
 @media screen and (max-width:768px){
 
     .main{
